@@ -45,6 +45,14 @@ Note: Here you can check the server connection using postmen api calls.
 
 ****Deploy Angular application on Docker****
 
+1) Copy build to aws EC2 machine.
+2) Create Dockerfile in the build to convert the build to Docker image.
+
+```
+FROM nginx:1.17.1-alpine
+COPY ./ /usr/share/nginx/html
+````
+
 
 
 
