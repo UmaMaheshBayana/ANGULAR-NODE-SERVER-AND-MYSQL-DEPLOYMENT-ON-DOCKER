@@ -34,5 +34,7 @@ exit
 
 Note: Here yu can connet your database server whit your server IP, username and password through msql workbench or heidiSQL
 
+****Deploy Node JS server solution****
+
 
 
