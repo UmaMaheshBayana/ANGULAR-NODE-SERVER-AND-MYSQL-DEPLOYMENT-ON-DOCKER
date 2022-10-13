@@ -36,5 +36,16 @@ Note: Here yu can connet your database server whit your server IP, username and 
 
 ****Deploy Node JS server solution****
 
+1) Copy node solution to the EC2 machine.
+2) Here in server.js, al the last of the file change the IP details of the server and save.
+3) Run the server using command ```node server.js```
+4) You will get a message saying, server started
+
+Note: Here you can check the server connection using postmen api calls.
+
+****
+
+
+
 
 
