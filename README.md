@@ -43,7 +43,7 @@ Note: Here yu can connet your database server whit your server IP, username and 
 
 Note: Here you can check the server connection using postmen api calls.
 
-****
+****Deploy Angular application on Docker****
 
 
 
