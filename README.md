@@ -41,7 +41,7 @@ Note: Here yu can connet your database server whit your server IP, username and 
 3) Run the server using command ```node server.js```
 4) You will get a message saying, server started
 
-Note: Here you can check the server connection using postmen api calls.
+Note: Here you can check the server connection using postmen api calls or you can check process ID using CMD ```ps -ef | grep node```.
 
 ****Deploy Angular application on Docker****
 
