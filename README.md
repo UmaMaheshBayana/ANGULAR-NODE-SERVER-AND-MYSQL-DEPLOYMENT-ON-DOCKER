@@ -46,12 +46,27 @@ Note: Here you can check the server connection using postmen api calls or you ca
 ****Deploy Angular application on Docker****
 
 1) Copy build to aws EC2 machine.
-2) Create Dockerfile in the build to convert the build to Docker image.
+2) Inside build files create Dockerfile in the build to convert the build to Docker image.
 
 ```
 FROM nginx:1.17.1-alpine
 COPY ./ /usr/share/nginx/html
 ````
+3) Now build docker image using CMD 
+
+```
+docker build -t $ImageName .
+````
+4) Check docker images usng CMD ```docker images```
+5) Now deploy the angular image to conatainer, using the below CMD
+
+```
+docker run -d -p 80:80 $ImageName
+````
+6) Here angular application will run on port 80
+7) Here you check docker containers using CMD ```docker ps -a```
+
+Note: Open the server url in web browser to access the application.
 
 
 
