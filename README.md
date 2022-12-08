@@ -35,11 +35,20 @@ exit
 Note: Here yu can connet your database server whit your server IP, username and password through msql workbench or heidiSQL
 
 ****Deploy Node JS server solution****
-
+****PROCESS-1****
 1) Copy node solution to the EC2 machine.
 2) Here in server.js, al the last of the file change the IP details of the server and save.
 3) Run the server using command ```node server.js```
 4) You will get a message saying, server started
+
+****Deploying Node JS server****
+****PROCESS-2****
+1) Copy the node server linux file to EC2 machine
+2) Convert the file to executable formate ```sudo chmod u+x $linuxfile```
+3) execute the file with pm2
+```
+pm2 start $linuxfile
+````
 
 Note: Here you can check the server connection using postmen api calls or you can check process ID using CMD ```ps -ef | grep node```.
 
