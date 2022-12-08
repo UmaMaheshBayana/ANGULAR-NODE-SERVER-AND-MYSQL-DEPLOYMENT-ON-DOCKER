@@ -50,7 +50,7 @@ Note: Here yu can connet your database server whit your server IP, username and 
 pm2 start $linuxfile
 ````
 
-Note: Here you can check the server connection using postmen api calls or you can check process ID using CMD ```ps -ef | grep node```.
+Note: Here you can check the server connection using postmen api calls or you can check process ID using CMD ```ps -ef | grep node``` or ```lsof -i tcp:6060``` and kill the process before running the file
 
 ****Deploy Angular application on Docker****
 
