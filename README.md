@@ -45,12 +45,15 @@ Note: Here yu can connet your database server whit your server IP, username and 
 ****PROCESS-2****
 1) Copy the node server linux file to EC2 machine
 2) Convert the file to executable formate ```sudo chmod u+x $linuxfile```
-3) execute the file with pm2
+3) Install pm2 and execute the file with pm2
 ```
-pm2 start $linuxfile
+pm2 start $linuxfile --name "$name"
 ````
-
-Note: Here you can check the server connection using postmen api calls or you can check process ID using CMD ```ps -ef | grep node``` or ```lsof -i tcp:6060``` and kill the process before running the file
+4) For re-deployment go to the old destination and stop the node file using cmd
+```
+pm2 stop $linuxfile
+````
+Note: Here you can check the server connection using postmen api calls or you can check process ID using CMD ```ps -ef | grep node``` or ```lsof -i tcp:6060``` and kill the process before running the file. 
 
 ****Deploy Angular application on Docker****
 
