@@ -51,7 +51,15 @@ pm2 start $linuxfile --name "$name"
 ````
 4) For re-deployment go to the old destination and stop the node file using cmd
 ```
+# show your list
+pm2 ls
+````
+```
 pm2 stop $linuxfile
+````
+```
+# stop and delete a process from the list
+pm2 delete app
 ````
 Note: Here you can check the server connection using postmen api calls or you can check process ID using CMD ```ps -ef | grep node``` or ```lsof -i tcp:6060``` and kill the process before running the file. 
 
